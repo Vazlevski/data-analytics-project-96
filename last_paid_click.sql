@@ -10,7 +10,7 @@ with paid_sessions as (
     from
         sessions as s
     where
-        s.medium in ('cpc', 'cpm', 'cpa', 'youtube', 'cpp', 'tg', 'social')
+        s.medium != ('organic')
 ),
 
 last_paid_clicks as (
